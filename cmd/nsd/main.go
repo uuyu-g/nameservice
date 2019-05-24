@@ -14,6 +14,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	"github.com/cosmos/cosmos-sdk/x/auth"
 	"github.com/cosmos/cosmos-sdk/x/bank"
+	"github.com/cosmos/cosmos-sdk/x/genutil"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/crypto"
@@ -22,7 +23,6 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	genutil "github.com/cosmos/cosmos-sdk/x/genutil"
 	abci "github.com/tendermint/tendermint/abci/types"
 	cfg "github.com/tendermint/tendermint/config"
 	dbm "github.com/tendermint/tendermint/libs/db"
