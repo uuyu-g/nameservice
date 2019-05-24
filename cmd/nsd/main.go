@@ -21,13 +21,13 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	"github.com/tendermint/tendermint/libs/log"
 
-	gaiaInit "github.com/cosmos/cosmos-sdk/cmd/gaia/init"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	app "github.com/cosmos/nameservice"
+	"github.com/cosmos/cosmos-sdk/x/genutil"
 	abci "github.com/tendermint/tendermint/abci/types"
 	cfg "github.com/tendermint/tendermint/config"
 	dbm "github.com/tendermint/tendermint/libs/db"
 	tmtypes "github.com/tendermint/tendermint/types"
+	app "github.com/yutaro-elk/nameservice"
 )
 
 // DefaultNodeHome sets the folder where the application data and configuration will be stored
@@ -89,7 +89,7 @@ func InitCmd(ctx *server.Context, cdc *codec.Codec) *cobra.Command {
 				chainID = fmt.Sprintf("test-chain-%v", common.RandStr(6))
 			}
 
-			_, pk, err := gaiaInit.InitializeNodeValidatorFiles(config)
+			_, pk, err := genutil.InitializeNodeValidatorFiles(config)
 			if err != nil {
 				return err
 			}

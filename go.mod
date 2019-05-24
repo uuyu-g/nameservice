@@ -11,7 +11,6 @@ require (
 	github.com/cosmos/cosmos-sdk v0.33.0
 	github.com/cosmos/go-bip39 v0.0.0-20180618194314-52158e4697b8
 	github.com/cosmos/ledger-cosmos-go v0.9.8
-	github.com/yutaro-elk/nameservice v0.0.0-20190401171757-ef9c78014e84
 	github.com/davecgh/go-spew v1.1.1
 	github.com/ethereum/go-ethereum v1.8.23
 	github.com/fsnotify/fsnotify v1.4.7
@@ -53,6 +52,7 @@ require (
 	github.com/tendermint/go-amino v0.14.1
 	github.com/tendermint/iavl v0.12.1
 	github.com/tendermint/tendermint v0.31.0-dev0
+	github.com/yutaro-elk/nameservice v0.0.0-20190524063352-252b68b5ba3c
 	github.com/zondax/hid v0.9.0
 	github.com/zondax/ledger-go v0.8.0
 	golang.org/x/net v0.0.0-20190213061140-3a22650c66bd
